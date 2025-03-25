@@ -2,5 +2,7 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "custom/slideshow"
+import "custom/slide01"
+import "custom/slide02"
 
 

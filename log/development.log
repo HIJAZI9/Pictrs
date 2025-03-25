@@ -1823,3 +1823,202 @@ Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 21:53:03 +0100
 Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 21:53:03 +0100
 Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 21:53:03 +0100
 Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 21:53:03 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:08:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.8ms | GC: 0.7ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 3.0ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | GC: 3.9ms)
+Completed 200 OK in 73ms (Views: 18.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 12.4ms)
+
+
+Started GET "/assets/application-ddf38dd9.js" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/custom/slide01-9574bf46.js" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:08:33 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 5.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-3930d6d8.js" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Started GET "/assets/custom/slide02-e8dc057d.js" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Started GET "/assets/custom/slide01-2243fc76.js" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:14:10 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:14:11 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:14:11 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:14:11 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 0.2ms)
+Completed 200 OK in 44ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/assets/custom/slide02-e0ce0d76.js" for 127.0.0.1 at 2025-03-25 22:16:44 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.1ms)
+Completed 200 OK in 45ms (Views: 5.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/assets/custom/slide02-526c3ea7.js" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:18:18 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 5.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/assets/custom/slide02-6a67f57b.js" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:19:46 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 0.5ms)
+Completed 200 OK in 44ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/assets/custom/slide02-e3280d4b.js" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:21:19 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:37:12 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | GC: 0.4ms)
+Completed 200 OK in 412ms (Views: 158.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:37:12 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:37:12 +0100
+Started GET "/assets/custom/slide02-351d2c8f.js" for 127.0.0.1 at 2025-03-25 22:37:12 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:37:13 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:37:13 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:37:13 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.7ms)
+Completed 200 OK in 48ms (Views: 6.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.9ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/assets/custom/slide02-d46c566b.js" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:38:13 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:44:20 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.1ms)
+Completed 200 OK in 24ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:47:38 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-25 22:48:39 +0100
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-25 22:48:39 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-25 22:48:39 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-25 22:48:39 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-25 22:48:40 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-25 22:48:40 +0100

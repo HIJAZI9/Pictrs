@@ -18,16 +18,23 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <style>
         * {
+            /* Apply 'Quicksand' font to all elements */
             font-family: 'Quicksand', sans-serif;
         }
     </style>
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-    <%= stylesheet_link_tag 'application.css', "data-turbo-track": "reload" %> <!-- This links to application.css -->
+    <!-- This links to application.css -->
+    <%= stylesheet_link_tag 'application.css', "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
     <%= javascript_import_module_tag "custom/slideshow" %>
+    <%= javascript_import_module_tag "custom/slide01" %>
+    <%= javascript_import_module_tag "custom/slide02" %>
+
+    <!-- Include Chart.js library from a CDN for creating charts on the page -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   </head>
 
