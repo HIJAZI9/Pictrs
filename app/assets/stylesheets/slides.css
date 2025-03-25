@@ -1,0 +1,18 @@
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.slideshow-container{
+    display: flex;
+    height: 94%;
+    width: 100%;
+    flex-direction: column;
+}
+
+ .mySlides{
+    display: flex;
+    height: 100%;
+}

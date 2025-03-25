@@ -16,10 +16,19 @@
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag 'application.css', "data-turbo-track": "reload" %> <!-- This links to application.css -->
+    <%= javascript_importmap_tags %>
+    <%= javascript_import_module_tag "custom/slideshow" %>
+
   </head>
 
   <body>

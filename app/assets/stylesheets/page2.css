@@ -1,0 +1,19 @@
+#mainSlide2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+.chartsSlide2{
+    width: 45%;
+    height: 45%;
+    min-width: 45%;
+    min-height: 45%;
+    border-color: #00A663;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.chartsSlide2 {
+    border: 2px solid #00A663;
+}

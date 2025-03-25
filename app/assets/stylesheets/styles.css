@@ -1,0 +1,19 @@
+/* Import page1.css */
+@import "page1.css";
+
+/* Import page2.css */
+@import "page2.css";
+
+/* Import slides.css */
+@import "slides.css";
+
+/* Import Animation.css */
+@import "Animation.css";
+
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
