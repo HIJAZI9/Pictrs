@@ -3573,3 +3573,1573 @@ Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 02:11:24 +0100
 Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 02:11:24 +0100
 Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 02:11:24 +0100
 Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 02:11:24 +0100
+Started GET "/login" for 127.0.0.1 at 2025-03-26 02:17:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 7.1ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | GC: 2.5ms)
+Completed 200 OK in 70ms (Views: 18.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 02:17:38 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 02:17:39 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 02:17:39 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 02:17:39 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 02:17:39 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 02:17:39 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 02:17:43 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 275ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 02:17:43 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 22ms (Views: 1.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 02:17:44 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 1.1ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:19:48 +0100
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:19:54 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:19:54 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:19:54 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:19:54 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:19:55 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:19:55 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:19:55 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:20:05 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 268ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:20:06 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:28:18 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 8.1ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-1e886466.css" for 127.0.0.1 at 2025-03-26 03:28:18 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:28:18 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:28:18 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:28:18 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:28:19 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:28:19 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:28:19 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.1ms)
+Completed 200 OK in 42ms (Views: 2.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/login-564f36d6.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:28:59 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:29:13 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-11ab660d.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:29:14 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.1ms)
+Completed 200 OK in 43ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/login-924a2d94.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:29:36 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:30:07 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 34ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:30:24 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 268ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.3ms)
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:30:29 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 3.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-580137c3.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:30:50 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.7ms)
+Completed 200 OK in 27ms (Views: 1.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/assets/login-d938d967.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:30:59 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 2.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:31:10 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 3.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/login-85296ebe.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:32:21 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.2ms)
+Completed 200 OK in 43ms (Views: 3.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:32:31 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:33:05 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 2.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-4ee01b51.css" for 127.0.0.1 at 2025-03-26 03:33:05 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:33:05 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:33:05 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:33:05 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:33:06 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:33:06 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:33:06 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 2.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:33:18 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | GC: 0.2ms)
+Completed 200 OK in 37ms (Views: 7.6ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/login-80cda65c.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:35:38 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:37:05 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.1ms)
+Completed 200 OK in 31ms (Views: 6.8ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:37:05 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:37:05 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:37:05 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:37:06 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:37:06 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:37:06 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 3.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/login-cbd90206.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:38:50 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 3.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 4.6ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:39:06 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.1ms)
+Completed 200 OK in 41ms (Views: 2.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/login-d0360ee7.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:39:46 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:41:02 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.3ms)
+Completed 200 OK in 44ms (Views: 2.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/assets/login-d4172ce6.css" for 127.0.0.1 at 2025-03-26 03:41:02 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:41:02 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:41:02 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:41:02 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:41:03 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:41:03 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:41:03 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:43:19 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_welcome_message.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 2.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:43:20 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.1ms)
+Completed 200 OK in 30ms (Views: 5.9ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:45:17 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.3ms)
+Completed 200 OK in 46ms (Views: 3.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 3.0ms)
+
+
+Started GET "/assets/login-9ed4ee43.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:45:38 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 1.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/login-8c91068b.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:45:47 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.1ms)
+Completed 200 OK in 31ms (Views: 1.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/login-c434c320.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:45:57 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:46:14 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 3.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/assets/login-25415ccf.css" for 127.0.0.1 at 2025-03-26 03:46:14 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:46:14 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:46:14 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:46:14 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:46:15 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:46:15 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:46:15 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 3.0ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-ee592cac.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:47:39 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 3.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/login-15b675c4.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:48:17 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:48:20 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 0.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:48:20 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:48:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:48:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:48:21 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:48:21 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:48:21 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 1.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-c09fd1d6.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:48:35 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:48:46 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 1.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/login-f704a789.css" for 127.0.0.1 at 2025-03-26 03:48:46 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:48:46 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:48:46 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:48:46 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:48:47 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:48:47 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:48:47 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:49:03 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.1ms)
+Completed 200 OK in 29ms (Views: 5.5ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:49:04 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:49:18 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:49:19 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:50:38 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:50:42 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 272ms (Views: 1.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:50:43 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:51:31 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 246ms (ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:51:31 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.2ms)
+Completed 200 OK in 26ms (Views: 5.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:51:31 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:51:31 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:51:31 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:51:32 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:51:32 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:51:32 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.2ms)
+Completed 200 OK in 20ms (Views: 1.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:52:21 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:52:22 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:52:22 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:52:22 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 268ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:52:26 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:54:03 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 271ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.2ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:54:09 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:55:35 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.2ms | GC: 0.1ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.1ms)
+Completed 200 OK in 36ms (Views: 7.1ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/assets/login-72bef2cc.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:55:36 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:55:48 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 03:55:52 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 272ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:55:53 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/assets/login-3251b56a.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:57:19 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 2.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/login-a6aaa222.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:57:37 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.6ms)
+Completed 200 OK in 43ms (Views: 1.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/assets/login-ec21f23d.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:57:50 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.2ms)
+Completed 200 OK in 42ms (Views: 3.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:59:14 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/assets/login-9147a7ac.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 03:59:44 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:00:04 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 04:00:09 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 270ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:00:09 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:00:09 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:00:09 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:00:09 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:00:10 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:00:10 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:00:10 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:02:50 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 2.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/assets/login-51696a81.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:03:15 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:03:28 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.1ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.1ms)
+Completed 200 OK in 42ms (Views: 1.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/assets/Animation-06478e11.css" for 127.0.0.1 at 2025-03-26 04:03:28 +0100
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:03:28 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:03:28 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:03:28 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:03:29 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:03:29 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:03:29 +0100
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:05:16 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 04:05:41 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:05:42 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 04:07:20 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 266ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:07:21 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 04:09:19 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 04:09:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:09:19 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:09:20 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 269ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:10:08 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:10:11 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-26 04:10:55 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Mo", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Mo' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 266ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:10:56 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:11:00 +0100
+Started GET "/login" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.1ms)
+Completed 200 OK in 25ms (Views: 5.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100

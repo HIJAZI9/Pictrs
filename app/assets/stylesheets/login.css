@@ -139,3 +139,27 @@ input {
     color: #eee;
 }
 /*End flash Message*/
+
+/*Start  CSS for the Navigation Form */
+
+.welcome-message {
+    background-color: #66CDAA;
+    text-align: center;
+    height: 10vh; /* 10% of the viewport height */
+    padding: 10px;
+}
+.logout-btn {
+    background-color: #8FBC8F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.logout-btn:hover {
+    background-color: #4CAF50;
+}
+/*End  CSS for the navigation Form */
