@@ -18,8 +18,13 @@ Note: This project does not fetch any API data; all data is included as default 
 # 🛠️ System Dependencies
 
 For this System to run, the following software should be installed:
-* Ruby  3.2.0 
-* Rails  8.0.2
+### 📌 Required versions:
+- **Ruby** 3.2.0
+- **Rails** 8.0.2
+
+> **Note:**  
+> Although the Rails guide recommends using the **ASDF** version manager, our project uses **RVM** (Ruby Version Manager) to manage Ruby versions.  
+> While **ASDF** is gaining popularity and surpassing other version managers like **rbenv** and **RVM**, we have chosen **RVM** for its flexibility and compatibility with our setup.
 
 # ⚙️ Implementation Process
 This project is designed to be run in a development environment. Once the project is up and running, the first page you encounter will be the user access page.
@@ -60,4 +65,18 @@ The timer will run for 5 seconds. When the slide is paused, the remaining time w
 <div style="display: flex; justify-content: space-between; align-items: center;">
 <img width="1456" alt="animation" src="https://github.com/user-attachments/assets/26b599fc-c4b0-4eed-8b96-1e5ac0e4faba" />
 </div>
+
+# 🚀 Run Locally
+
+To run this project on your local machine, follow the steps below:
+
+* First, clone the repository to your local machine
+* Install Gems `bundle install`
+* Set Up the Database `rails db:create > rails db:migrate` > `rails db:seed` or Alternatively, you can manually create a user by using the Rails console. Open the console with the following command `rails c` then `User.create(username: "Christian", password: "123")`
+* Finally, run the Rails server and visit http://localhost:3000 in your browser to see the application running locally. `rails s`
+
+
+
+
+
 
