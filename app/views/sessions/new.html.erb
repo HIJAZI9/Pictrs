@@ -1,0 +1,35 @@
+<div class="parentContainer">
+  <div class="container">
+    <div class="title">Pictrs Dashboard</div>
+    <div class="login-item">
+      <!--  Generic login Form -->
+      <%= form_with(url: login_path, class: "form form-login", method: :post,data:{ turbo: false },) do |form|%>
+        <!-- set Username , Password text_fields and Submit Helpers -->
+        <div class="form-field">
+          <%= form.label :username,class: "user" do %>
+            <span class="hidden">Username</span>
+          <%end %>
+          <%= form.text_field :username, required: true, class: "form-input", placeholder: "Username" %>
+        </div>
+
+        <div class="form-field">
+          <%= form.label :password, class: "lock" do %>
+            <span class="hidden">Password</span>
+          <% end %>
+          <%= form.password_field :password, required: true, class: "form-input", placeholder: "Password" %>
+        </div>
+
+        <div class="form-field">
+          <%= form.submit "Log in", class: "btn btn-primary"%>
+        </div>
+        <!-- Rendering Flash Messages -->
+        <% flash.each do |type, msg| %>
+          <hr style="border-color: #222222">
+          <div class="msg">
+            <p><%= msg %></p>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

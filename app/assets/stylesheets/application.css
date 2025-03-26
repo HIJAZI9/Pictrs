@@ -8,4 +8,8 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* Import styles.css */
 @import "styles.css";
+/* Import login.css */
+@import "login.css";

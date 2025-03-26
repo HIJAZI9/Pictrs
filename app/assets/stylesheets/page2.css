@@ -1,3 +1,5 @@
+/*Start  CSS for the Slide 2*/
+
 #mainSlide2{
     display: flex;
     flex-wrap: wrap;
@@ -17,3 +19,4 @@
 .chartsSlide2 {
     border: 2px solid #00A663;
 }
+/* End  CSS for the Slide 2*/
