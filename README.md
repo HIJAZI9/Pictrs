@@ -75,7 +75,27 @@ To run this project on your local machine, follow the steps below:
 * Set Up the Database `rails db:create > rails db:migrate` > `rails db:seed` or Alternatively, you can manually create a user by using the Rails console. Open the console with the following command `rails c` then `User.create(username: "Christian", password: "123")`
 * Finally, run the Rails server and visit http://localhost:3000 in your browser to see the application running locally. `rails s`
 
+## Try the Application Online (Heroku Deployment)
 
+This application is deployed on Heroku and can be tested directly using the following link:
+
+### Test Credentials
+To log in and test the app, use the following credentials:
+
+- **Username:** Christian
+- **Password:** 123
+
+### How to Test
+
+1. Visit the app at [https://hijazi-91e9239f6fdf.herokuapp.com/login](https://hijazi-91e9239f6fdf.herokuapp.com/login).
+2. Enter the test credentials above in the login form.
+3. Test the app's functionality.
+
+> **Note:** The app is hosted on Heroku, so you don't need to run it locally. Just visit the provided URL to test it.
+### Important Note About Layout
+
+- The current template is **not optimized for mobile devices**. It is designed to be used on **laptop-sized screens** or larger.
+- If you try to access the app on a mobile screen, some elements might not display as intended.
 
 
 
