@@ -5143,3 +5143,465 @@ Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
 Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
 Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
 Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-26 04:12:02 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$169je9811hLo5X.D8ZpKS.skVGZETSGz.lFvMMqGG44Xsr4LW.60K', '2025-03-26 23:32:32.674210', '2025-03-26 23:32:32.674210') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.8ms)
+Completed 200 OK in 36ms (Views: 11.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:32:45 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 274ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 2.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:32:51 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:32:54 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:32:55 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:32:55 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:32:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$0WHOZudFAOMz/u65VYLiju/V8H0HMneluHj5ASm0LyAeQh5ydWjpC', '2025-03-26 23:33:09.429900', '2025-03-26 23:33:09.429900') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 57ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 8.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | GC: 0.8ms)
+Completed 200 OK in 35ms (Views: 10.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:33:14 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:33:20 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 274ms (Views: 1.2ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:33:20 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:33:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:33:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:33:21 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:33:21 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:33:21 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 272ms (Views: 1.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:33:28 +0100
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$3qjEfo95AVSVXmGS04.94eASELCI5nVvw1rLJJkBRSFKwJwVqdqfS', '2025-03-26 23:34:16.355490', '2025-03-26 23:34:16.355490') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | GC: 0.7ms)
+Completed 200 OK in 35ms (Views: 11.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:34:22 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:34:28 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 279ms (Views: 1.0ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:34:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$BxXcDDTmxwUbm/xK6bBEYOodXvV.NxN9odK5HKcTC9YcleVD1xBou', '2025-03-26 23:35:27.229298', '2025-03-26 23:35:27.229298') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 57ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 9.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 0.7ms)
+Completed 200 OK in 35ms (Views: 10.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:35:33 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:35:39 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 279ms (Views: 1.3ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:35:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$7rUgN71fzShzqB7P2imWzOEQuX9l2Z82ADuJQyC4IPQlKksW8oRfW', '2025-03-26 23:36:35.968841', '2025-03-26 23:36:35.968841') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:36:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.7ms | GC: 1.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 2.3ms)
+Completed 200 OK in 62ms (Views: 12.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 10.9ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:36:48 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:36:54 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 276ms (Views: 1.2ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:36:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$repUhnPf.COl6VyFXh7UXOMyZD6qJy5s5NKbVRHlaLOebJUemWQ9C', '2025-03-26 23:37:55.014967', '2025-03-26 23:37:55.014967') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 1.0ms)
+Completed 200 OK in 36ms (Views: 11.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:38:01 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 276ms (Views: 1.3ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:38:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" /*application='Pictrs'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Pictrs'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250325235541) /*application='Pictrs'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-03-26 23:39:03.600645', '2025-03-26 23:39:03.600646') RETURNING "key" /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '1ec4600c0968c7cbd6fb4c64b8e2ea993842d9ca', '2025-03-26 23:39:03.601566', '2025-03-26 23:39:03.601567') RETURNING "key" /*application='Pictrs'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" /*application='Pictrs'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Pictrs'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250325235541) /*application='Pictrs'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-03-26 23:39:03.606054', '2025-03-26 23:39:03.606055') RETURNING "key" /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.0ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-03-26 23:39:03.606896' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '1ec4600c0968c7cbd6fb4c64b8e2ea993842d9ca', '2025-03-26 23:39:03.620627', '2025-03-26 23:39:03.620628') RETURNING "key" /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$jxI7DjB5JAecvv7xieg6yOw96zoVtnHTylf/eixaSNoWVIgZikFrK', '2025-03-26 23:39:03.853420', '2025-03-26 23:39:03.853420') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christian', '$2a$12$txH20mmDja2WgTwle0CJ3OH2A4ZnwntoLjKyLlXxn3XC9uP1OaSY6', '2025-03-26 23:39:13.476092', '2025-03-26 23:39:13.476092') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:39:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Pictrs'*/[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 7.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:39:19 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.9ms)
+Completed 200 OK in 35ms (Views: 11.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:39:20 +0100
+Started POST "/login" for 127.0.0.1 at 2025-03-27 00:39:27 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"Christian", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = 'Christian' LIMIT 1 /*action='create',application='Pictrs',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 275ms (ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Pictrs',controller='main'*/[0m
+  ↳ app/controllers/application_controller.rb:14:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/_notification.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page01.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/_page02.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered main/index.html.erb within layouts/application (Duration: 1.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 2.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:39:28 +0100
+Started DELETE "/logout" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/logout
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | GC: 0.1ms)
+Completed 200 OK in 20ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/styles.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Started GET "/assets/login.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Started GET "/assets/page1.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Started GET "/assets/slides.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Started GET "/assets/page2.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+Started GET "/assets/Animation.css" for 127.0.0.1 at 2025-03-27 00:39:30 +0100
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Christiann', '$2a$12$lRvOquySDCIc4Vs0XggMJuv9hkimZp4HadNmGIwb6u5Ivo1ZzO3mm', '2025-03-26 23:42:27.767448', '2025-03-26 23:42:27.767448') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Mo', '$2a$12$K7WDnndGHBU.BW.ger7n/OiDOaXzsbcDy61PKqrtzu.6VG8xTwtXm', '2025-03-26 23:42:41.409287', '2025-03-26 23:42:41.409287') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Pictrs'*/[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ('Moo', '$2a$12$D4Wfj.v6HVk.8eT0GMBMBeOtNgCVY6JfVCTGyxL3pCnfvICUsS1Yy', '2025-03-27 01:31:01.493791', '2025-03-27 01:31:01.493791') RETURNING "id" /*application='Pictrs'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Pictrs'*/[0m
